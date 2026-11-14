@@ -35,7 +35,7 @@ Every 0.1 s the script sends commands, reads depth, heading and position, and lo
 The sub overshoots to about -2.4 m and then holds that depth steadily,
 and each turn overshoots by about 6°, which skews the corners slightly.
 
-## Run it
+## How to run it
 
 Requires ArduPilot SITL and pymavlink (installed by ArduPilot's `install-prereqs-ubuntu.sh`).
 

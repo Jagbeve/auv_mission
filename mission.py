@@ -78,7 +78,10 @@ try:
     # ===== STAGE 1: DIVE =====
     print("DIVE")
     while state["depth"] > TARGET_DEPTH:   # keep diving until 2 m down
-        step("DIVE", throttle=1350)
+        if state["depth"] > TARGET_DEPTH + 0.5:   # more than 0.5 m above target
+            step("DIVE", throttle=1350)           # dive fast
+        else:                                     # last 0.5 m
+            step("DIVE", throttle=1450)           # dive slowly
 
     print("HOLD")
     t = time.time()
@@ -86,7 +89,7 @@ try:
         step("HOLD")
 
     # ===== STAGE 2: SQUARE =====
-    start_heading = state["heading"]                            # which way we face now
+    start_heading = state["heading"]                 # which way we face now
     targets = []                                     # the 4 headings, one per side
     for i in range(4):                               # i = 0, 1, 2, 3
         heading = (start_heading + 90 * i) % 360     # 90 deg more each side, wrapped to 0-359
