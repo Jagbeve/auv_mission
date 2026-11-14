@@ -80,12 +80,3 @@ python3 mission.py
 mv mission_log.csv run1.csv      # repeat for run2..run5
 python3 results.py
 ```
-
-## Files
-
-Each version folder has its own copy of these:
-
-- `mission.py`: the autonomous mission
-- `results.py`: computes the accuracy table and draws all paths
-- `plot_mission.py`: depth and heading over time for one run
-- `run1.csv` … `run5.csv`: logs from the 5 trials
