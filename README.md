@@ -39,7 +39,7 @@ Each version was tested over 5 runs.
 | 5 | 0.39 m | 6.4° | 0.23 m |
 
 V1 dived at full speed until it passed -2 m. The sub kept coasting and settled at about -2.4 m,
-then held that wrong depth steadily. Each turn also overshot by about 6°, which skews the corners slightly.
+then held that wrong depth. Each turn also overshot by about 6°, which skews the corners slightly.
 
 ### V2: slow dive near target
 
