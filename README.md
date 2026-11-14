@@ -1,7 +1,7 @@
 # Autonomous AUV Square Mission (ArduSub SITL)
 
 A Python mission controller that drives a simulated underwater vehicle with no human input.
-It dives to a target depth, drives a square using a heading controller, and surfaces.
+It dives to a target depth, drives in a square shape using a heading controller, and surfaces.
 It talks to the ArduSub autopilot over MAVLink, the same way it would talk to a real Pixhawk.
 
 Built as groundwork for the GMU RoboSub team's autonomy software.
