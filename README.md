@@ -2,9 +2,14 @@
 
 A Python mission controller that drives a simulated underwater vehicle with no human input.
 It dives to a target depth, drives a square using a heading controller, and surfaces.
-It talks to the ArduSub autopilot over MAVLink, the same way it would talk to a real Pixhawk.
+It talks to the ArduSub autopilot over MAVLink, the same way it would talk to a real Pixhawk. 
+The vehicle is simulated at an ocean site in Santa Monica Bay, CA (ArduPilot's RATBeach location).
 
 Built as groundwork for the GMU RoboSub team's autonomy software.
+![ocean site](images/ocean_site.png) ![ocean site](images/auv_in_action.png)
+Simulated sub at the ocean site in Santa Monica Bay Sub driving its square, zoomed in
+
+<i>Top: the simulated sub (blue) at the ocean site. Bottom: zoomed in mid-mission; the yellow line is its path.</i>
 
 ## How it works
 
